@@ -4,11 +4,11 @@
 #include <WiFiClient.h>
 #include <M5Core2.h>
 
-const char* ssid = "SSID"; // SSID名を入れる
+const char* ssid = "SSID"; // 使用するLAN内のSSID名を入れる
 const char* password = "pass word of router"; // PASSWORDを入れる
 
 static WiFiUDP wifiUdp; 
-static const char *kRemoteIpadr = "192.168.11.60"; //JetbotのIPです
+static const char *kRemoteIpadr = "192.168.11.60"; //IP of subscriber
 static const int kRmoteUdpPort = 5000; //送信先のポート
 
 float acc[3];
